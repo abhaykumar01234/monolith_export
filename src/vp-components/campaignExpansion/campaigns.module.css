@@ -1,0 +1,13 @@
+.campaigns{
+    padding: 2rem;
+    background-color: #eee;
+}
+
+.campaigns h1{
+    color: #071e54;
+}
+
+.tabs{
+    display: flex;
+    gap: 2rem;
+}

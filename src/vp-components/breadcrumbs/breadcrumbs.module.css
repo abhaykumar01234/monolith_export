@@ -1,0 +1,9 @@
+.breadcrumbs p{
+    color: #333;
+    padding: 1rem 0;
+}
+
+.breadcrumbs a{
+    font-weight: bold;
+    margin: auto .5rem;
+}
