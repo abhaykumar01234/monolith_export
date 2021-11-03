@@ -3,12 +3,10 @@ import ContainerApp from './app/index'
 import { BrowserRouter as Router } from "react-router-dom";
 import './app.css'
 
-function App() {
+export const App = () => {
   return (
     <Router>
       <ContainerApp />
     </Router>
   );
-}
-
-export default App;
+};

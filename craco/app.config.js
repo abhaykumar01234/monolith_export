@@ -3,10 +3,10 @@ const path = require('path');
 module.exports = {
     webpack: {
       configure: (webpackConfig, { paths }) => {
-        webpackConfig.entry = "./src/vp-components/index.js"
-        paths.appBuild = webpackConfig.output.path = path.resolve(__dirname, '..', 'dist', 'components');
+        webpackConfig.entry = "./src/App.js"
+        paths.appBuild = webpackConfig.output.path = path.resolve(__dirname, '..', 'dist', 'app');
         webpackConfig.output.filename = 'index.js'
-        webpackConfig.output.library = 'VpComponents'
+        webpackConfig.output.library = 'VPF'
         webpackConfig.output.libraryTarget = 'commonjs'
         webpackConfig.optimization.runtimeChunk = false;
         webpackConfig.optimization.splitChunks.chunks = () => false
@@ -21,7 +21,7 @@ module.exports = {
       {
         plugin: {
           overrideWebpackConfig: ({ webpackConfig }) => {
-            webpackConfig.plugins[4].options.filename = "vp-components.min.css";
+            webpackConfig.plugins[4].options.filename = "app.min.css";
             return webpackConfig;
           },
         },

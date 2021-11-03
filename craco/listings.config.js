@@ -14,14 +14,14 @@ module.exports = {
         return webpackConfig; 
       },
       plugins:{
-        // remove: ['HtmlWebpackPlugin']
+        remove: ['HtmlWebpackPlugin']
       }
     },
     plugins: [
       {
         plugin: {
           overrideWebpackConfig: ({ webpackConfig }) => {
-            webpackConfig.plugins[5].options.filename = "listings.min.css";
+            webpackConfig.plugins[4].options.filename = "listings.min.css";
             return webpackConfig;
           },
         },

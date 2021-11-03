@@ -14,10 +14,11 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "GENERATE_SOURCEMAP=false react-scripts build",
+    "build:app": "GENERATE_SOURCEMAP=false craco build --config craco/app.config.js",
     "build:ppl": "GENERATE_SOURCEMAP=false craco build --config craco/ppl.config.js",
     "build:listings": "GENERATE_SOURCEMAP=false craco build --config craco/listings.config.js",
     "build:components": "GENERATE_SOURCEMAP=false craco build --config craco/components.config.js",
-    "build:apps":"npm run build:ppl && npm run build:listings && npm run build:components",
+    "build:apps":"npm run build:app && npm run build:ppl && npm run build:listings && npm run build:components",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

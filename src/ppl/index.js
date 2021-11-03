@@ -2,7 +2,7 @@ import React from 'react';
 // import { sharedUtilValue } from '../vp-components';
 import s from './ppl.module.css'
 
-const PPL = () => {
+export const PPL = () => {
     return (
         <div className={s.ppl}>
             <h1>PPL APP</h1>
